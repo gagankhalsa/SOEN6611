@@ -8,7 +8,7 @@ public class ASTInformationGenerator {
 	private static ITypeRoot iTypeRoot;
 	
 	public static void setCurrentITypeRoot(ITypeRoot typeRoot) {
-		iTypeRoot = typeRoot;
+		iTypeRoot = typeRoot;//ok
 	}
 
 	public static ASTInformation generateASTInformation(ASTNode astNode) {
