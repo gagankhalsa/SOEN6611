@@ -58,6 +58,55 @@
       </actionSet>
    </extension>
    <extension
+           point="org.eclipse.ui.actionSets">
+      <actionSet
+              label="Metrics"
+              visible="true"
+              id="gr.uom.java.jdeodorant.Metrics">
+         <menu
+                 label="Metrics"
+                 id="MetricImplementationMenu">
+            <separator
+                    name="sampleGroup">
+            </separator>
+         </menu>
+         <action
+                 class="gr.uom.java.jdeodorant.refactoring.actions.MetricImplementationMenu"
+                 icon="icons/compass.png"
+                 id="gr.uom.java.jdeodorant.actions.ReusabilityV1"
+                 label="Reusability_Metric"
+                 menubarPath="MetricImplementationMenu/sampleGroup"
+                 tooltip="Reusability_Metric">
+            <selection
+                  class="gr.uom.java.metrics.Understandability">
+            </selection>
+         </action>
+         <action
+                 class="gr.uom.java.jdeodorant.refactoring.actions.MetricImplementationMenu"
+                 icon="icons/compass.png"
+                 id="gr.uom.java.jdeodorant.actions.UnderstandibilityV2"
+                 label="Understandability_Metric"
+                 menubarPath="MetricImplementationMenu/sampleGroup"
+                 tooltip="Understandability_Metric">
+            <selection
+                  class="gr.uom.java.metrics.Understandability">
+            </selection>
+         </action>
+         
+         <action
+                 class="gr.uom.java.jdeodorant.refactoring.actions.MetricImplementationMenu"
+                 icon="icons/compass.png"
+                 id="gr.uom.java.jdeodorant.actions.FlexibilityV3"
+                 label="Flexibility_Metric"
+                 menubarPath="MetricImplementationMenu/sampleGroup"
+                 tooltip="Flexibility_Metric">
+         </action>
+         
+         
+         
+      </actionSet>
+   </extension>
+   <extension
          point="org.eclipse.ui.views">
       <category
             name="Bad Smells"

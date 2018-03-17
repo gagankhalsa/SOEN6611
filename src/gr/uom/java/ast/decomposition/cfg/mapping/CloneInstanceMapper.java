@@ -57,7 +57,7 @@ public class CloneInstanceMapper {
 
 	public List<PDGRegionSubTreeMapper> getSubTreeMappers() {
 		return subTreeMappers;
-	}
+	}//ok
 
 	public CloneInstanceMapper(CloneInstance instance1, CloneInstance instance2, IJavaProject javaProject, IProgressMonitor monitor) {
 		this.subTreeMappers = new ArrayList<PDGRegionSubTreeMapper>();
